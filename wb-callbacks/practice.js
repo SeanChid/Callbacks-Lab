@@ -189,7 +189,9 @@ getUserById(users, '16t', (user) => {
 // Make sure to use an arrow function.
 // You should not use a for loop, but should use the filter method instead.
 
-// REPLACE THIS WITH YOUR CODE
+const evens = (array) => {
+  return array.filter(num => num % 2 === 0)
+}
 
 /// /////// PROBLEM 8 //////////
 
@@ -201,7 +203,9 @@ getUserById(users, '16t', (user) => {
 //
 // Make sure to use an arrow function combined with the filter method (not a for loop).
 
-// REPLACE THIS WITH YOUR CODE
+const startWithLetterA = (array) => {
+  return array.filter(letter => letter[0] === 'a' || letter[0] === 'A')
+}
 
 /// /////// PROBLEM 9 //////////
 
@@ -211,7 +215,11 @@ getUserById(users, '16t', (user) => {
 //
 // Make sure to use arrow functions combined with the map method.
 
-// REPLACE THIS WITH YOUR CODE
+const formalGreeting = (names) => {
+  return names.map(name => {
+    return `Hello, ${name}`
+  })
+}
 
 /// /////// PROBLEM 10 //////////
 
